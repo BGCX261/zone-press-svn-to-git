@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Zone-press</title>
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js"></script>
+<script type="text/javascript" src="js/builder.js"></script>
+<script type="text/javascript" src="js/controls.js"></script>
+<script type="text/javascript" src="js/dragdrop.js"></script>
+<script type="text/javascript" src="js/effects.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/sound.js"></script>
+<script type="text/javascript" src="js/unittest.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript">
+	var $j = jQuery.noConflict();
+</script>
+<script type="text/javascript">
+	function jq(){
+		$j("#title").hide();
+	}
+	function pt(){
+		$("title").hide();
+	}
+	function ui(){
+		$j("#title").show('blind',{},1000,callback);
+	}
+	function callback(){
+		//alert("ok");
+	}
+	function sc(){
+		Effect.SlideDown("title");
+	}
+</script>
+</head>
+<body>
+<div id="title">
+	<div>
+		Welcome to the zone-press app engine webapp!
+	</div>
+</div>
+
+	<button onclick="jq()">test jquery</button>
+	<button onclick="pt()">test prototype</button>
+	
+	<button onclick="ui()">test jqueryUI</button>
+	<button onclick="sc()">test scriptaculous</button>
+
+</body>
+</html>

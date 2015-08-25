@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>greetServlet</servlet-name>
+    <servlet-class>com.flavio.zonepress.server.GreetingServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>greetServlet</servlet-name>
+    <url-pattern>greet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>testController</servlet-name>
+    <servlet-class>com.flavio.zonepress.controller.TestController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>testController</servlet-name>
+    <url-pattern>test</url-pattern>
+  </servlet-mapping>
+  
+  <!-- LOGIN -->
+    <servlet>
+    <servlet-name>loginFormController</servlet-name>
+    <servlet-class>com.flavio.zonepress.controller.LoginFormController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>loginFormController</servlet-name>
+    <url-pattern>loginForm</url-pattern>
+  </servlet-mapping>
+  
+  <!-- MATCH -->
+  <servlet>
+    <servlet-name>matchListController</servlet-name>
+    <servlet-class>com.flavio.zonepress.controller.MatchListController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>matchListController</servlet-name>
+    <url-pattern>matchList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>matchFormController</servlet-name>
+    <servlet-class>com.flavio.zonepress.controller.MatchFormController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>matchFormController</servlet-name>
+    <url-pattern>matchForm</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- SEASON -->
+  <servlet>
+    <servlet-name>seasonListController</servlet-name>
+    <servlet-class>com.flavio.zonepress.controller.SeasonListController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>seasonListController</servlet-name>
+    <url-pattern>seasonList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>seasonFormController</servlet-name>
+    <servlet-class>com.flavio.zonepress.controller.SeasonFormController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>seasonFormController</servlet-name>
+    <url-pattern>seasonForm</url-pattern>
+  </servlet-mapping>
+  
+    
+  <!-- USER -->
+  <servlet>
+    <servlet-name>userListController</servlet-name>
+    <servlet-class>com.flavio.zonepress.controller.UserListController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>userListController</servlet-name>
+    <url-pattern>userList</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Zone_press.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>
